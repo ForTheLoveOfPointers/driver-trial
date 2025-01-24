@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A3AA00C7-CF6B-40A7-80B1-55D64FD81E18}|KM Driver\\KM Driver.vcxproj|C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\KM Driver\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A3AA00C7-CF6B-40A7-80B1-55D64FD81E18}|KM Driver\\KM Driver.vcxproj|solutionrelative:KM Driver\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D059FD75-56A6-4684-88D7-91D12B032533}|Driver\\Driver.vcxproj|C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\Driver\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D059FD75-56A6-4684-88D7-91D12B032533}|Driver\\Driver.vcxproj|solutionrelative:Driver\\Source\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\KM Driver\\Source\\main.cpp",
+              "RelativeDocumentMoniker": "KM Driver\\Source\\main.cpp",
+              "ToolTip": "C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\KM Driver\\Source\\main.cpp",
+              "RelativeToolTip": "KM Driver\\Source\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-24T15:22:06.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\Driver\\Source\\main.cpp",
+              "RelativeDocumentMoniker": "Driver\\Source\\main.cpp",
+              "ToolTip": "C:\\Users\\unhap\\OneDrive\\Escritorio\\C\\Driver\\Driver\\Source\\main.cpp",
+              "RelativeToolTip": "Driver\\Source\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-24T14:49:17.015Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
