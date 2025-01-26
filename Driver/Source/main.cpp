@@ -86,8 +86,18 @@ namespace driver {
 		r.target = reinterpret_cast<PVOID>(addr);
 		r.buffer = &temp;
 		r.size = sizeof(T);
-		DeviceIoControl(driver_handle, codes::attach, &r, sizeof(r), &r, sizeof(r), nullptr, nullptr);
+		DeviceIoControl(driver_handle, codes::read, &r, sizeof(r), &r, sizeof(r), nullptr, nullptr);
 		return temp;
+	}
+
+	template <class T>
+	BOOL write_memory(HANDLE driver_handle, const std::uintptr_t addr, const T& value) {
+		
+		Request r;
+		r.target = reinterpret_cast<PVOID>(addr);
+		r.buffer = (PVOID)&value;
+		r.size = sizeof(T);
+		return DeviceIoControl(driver_handle, codes::write, &r, sizeof(r), &r, sizeof(r), nullptr, nullptr);
 	}
 
 }
@@ -99,5 +109,19 @@ int main(int argc, char* argv[]) {
 		std::cin.get();
 		return -1;
 	}
+
+	const HANDLE driver_handle = CreateFile(L"\\\\.\\SexyDriver", GENERIC_READ, 0, nullptr, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, nullptr);
+	if (driver_handle == INVALID_HANDLE_VALUE) {
+		std::cout << "Failed to create driver handle" << std::endl;
+		std::cin.get();
+		return -1;
+	}
+
+	if (driver::attach_to_process(driver_handle, pid)) {
+		std::cout << "Successfully attached user mode application to the driver..." << std::endl;
+		std::cin.get();
+	}
+
+	CloseHandle(driver_handle);
 	return 0;
 }
